@@ -29,3 +29,31 @@
 **6 - Flexibilidade Multilingue:**
 
 - Suporte para executar aplicativos em contêiners usando qualquer linguagem ou estrutura que possa ser contida em um contêiner Docker.
+
+## Principais Componentes do Cluster AKS
+
+**1 - Containerd:**
+
+- Container runtime padrão
+- Instalado em cada node que gerencia e roda imagens de container
+
+**2 - Kubelet:**
+
+- Agente que é executado no worker node
+- Comunica-se com o control plane e outros componentes dentro do worker.
+- Garante que os conteineres e os nós funcionem corretamente
+
+**3 - Kube-Proxy**
+
+- Proxy de rede que roda em cada nó
+- Instalado como daemonset no AKS
+- Responsável por manter as regras de rede nos nós e manipular o tráfego de dos PODs e para os PODs
+
+**4 - Coredns**
+
+- Instalação realizada durante a implantação do AKS
+- Servidor DNS autoritativo
+- Utiliza plugins adicionais ao coredns
+- Usado para resolver nomes de dominio e serviços e PODs do cluster
+- Requisições dentro do cluster usa o plugin kubernetes
+- Requisições fora do cluster usa o plugin forward
