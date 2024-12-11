@@ -1,4 +1,5 @@
-# ![Azure Kubenertes Services - AKS](./images/logo/logo_aks.png) 
+# Azure Kubenertes Services - AKS
+
  O Azure Kubernetes Services (AKS) é um serviço gerenciado da Microsoft Azure para orquestração de conteineres usando o kubernetes.
 
  ## Principais Caracteristicas do AKS
