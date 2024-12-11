@@ -15,3 +15,17 @@
 **3 - Integração com Azure:**
 
 - Funciona de forma integrada com outros serviços do Azure, como Microsoft Entra ID e integração com ferramentas de segurança, como Azure Policy.
+
+**4 - Custo-efetividade:**
+
+- Você paga apenas pelos nós do cluster em execução, enquanto o plano de controle (control plane) é gratuito.
+
+**5 - Segurança**
+
+- Suporte para controle de acesso baseado em funções (RBAC).
+
+- Autenticação via Microsoft Entra e integração com ferramentas de segurança como Azure Policy
+
+**6 - Flexibilidade Multilingue:**
+
+- Suporte para executar aplicativos em contêiners usando qualquer linguagem ou estrutura que possa ser contida em um contêiner Docker.
