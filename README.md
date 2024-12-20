@@ -145,7 +145,7 @@ Podemos criar um cluster aks no Azure acessando o portal.azure.com, através de 
 Irei demonstrar como criar um cluster aks com as configurações default utilizando o azure cli, considerando que você já tenha uma conta no Azure e o Azure CLI instalado, 
 segue passo a passo:
 
-**Passo 1:** realizar o login no portal do azure através da linha de comando:
+**Passo 1:** Realizar o login no portal do azure através da linha de comando:
 - az login
 - Será aberta a tela abaixo para que você se logue no portal e logo após tela no terminal para selecionar a subscription caso, tenha mais de uma
 
@@ -157,3 +157,10 @@ segue passo a passo:
 | ![azlogin-01.png](images/azlogin-01.png) |
 |:-----------------------------:|
 | Figura 4: az login|
+
+**Passo 2:** Após realizar o login criar o resource group com o seguinte comando:
+
+```
+ az group create -l eastus -n rg-aks-devlab01
+
+ ```
