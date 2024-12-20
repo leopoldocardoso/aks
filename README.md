@@ -115,14 +115,14 @@ No AKS podemos ter clusters públicos e privados.
 **Escalabilidade:**
 - É possível dimensionar horizontalmente um node pool adicionando ou removendo *Nós*
 
-**Configuração flexível**
+**Configuração flexível:**
 - Cada node pool pode ter configurações diferentes, como tamanho de VM, tipo de VM e até versão do sistema operacional
 
-**Isolamento de recursos**
+**Isolamento de recursos:**
 - É possível isolar recursos para diferentes cargas de trabalho no mesmo cluster AKS
 
-**Atualização controlada**
+**Atualização controlada:**
 - Capacidade de atualizar ou fazer upgrade de um node pool separadament de forma controlada
 
-**Balanceamento de carga**
+**Balanceamento de carga:**
 - Os nodes pools podem ser configurados com diferentes tipos de VMs para otimizar o balanceamento de carga para atender requisitos de desempenho.
