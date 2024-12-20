@@ -29,3 +29,13 @@
 **6 - Flexibilidade Multilingue:**
 
 - Suporte para executar aplicativos em contêiners usando qualquer linguagem ou estrutura que possa ser contida em um contêiner Docker.
+
+## Estrutura de recursos do AKS
+
+Quando criamos um Cluster AKS, automaticamente um grupo de recursos gerenciado pela Microsoft é criado e normalmente é nomeado com o prefixo MC.
+
+Dentro deste grupo de recursos gerenciado alguns componentes são criados para o funcionamento do AKS.
+
+No exemplo abaixo vejam que criei o recurso aks-devlab01 no grupo de recursos *rg-aks-devlab01* e automaticamente foi criado um grupo de recurso chamado *MC_rg-aks-devlab01_aks-devlab01_eastus*. 
+
+![alt text](image.png)
