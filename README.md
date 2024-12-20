@@ -43,4 +43,8 @@ No exemplo abaixo vejam que criei o recurso aks-devlab01 no grupo de recursos *r
   <figcaption>Figura 1: rg-aks-devlab01</figcaption>
 </figure>
 
+<figure>
+  <img src="images/mc-rg-aks.png" alt="MC_rg-aks-devlab01_aks-devlab01_eastus" style="width:300px; height:auto;">
+  <figcaption>Figura 2: MC_rg-aks-devlab01_aks-devlab01_eastus</figcaption>
+</figure>
 
