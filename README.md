@@ -171,10 +171,10 @@ az aks create -g rg-aks-devlab01 -n aks-devlab01 --node-count 1 --generate-ssh-k
 ```
 Onde:
 
-az aks create: comando para criação do AKS
--g rg-aks-devlab01 -n aks-devlab01: informando que o cluster será criado no resource group rg-aks-dev-lab01 e com o nome aks-devlab01
---node-count 1: define o número de node pool que será criado, neste caso apenas 1
---generate-ssh-keys: define a geração de chaves ssh
+*az aks create:* comando para criação do AKS
+*-g rg-aks-devlab01 -n aks-devlab01:* informando que o cluster será criado no resource group rg-aks-dev-lab01 e com o nome aks-devlab01
+*--node-count 1:* define o número de node pool que será criado, neste caso apenas 1
+*--generate-ssh-keys:* define a geração de chaves ssh
 
 Após a execução destes dois comandos nosso cluster aks foi criado.
 
@@ -185,4 +185,24 @@ Após a execução destes dois comandos nosso cluster aks foi criado.
 
 | ![mc-rg-aks.png](images/mc-rg-aks.png) |
 |:-----------------------------:|
-| Figura 2: MC_rg-aks-devlab01_aks-devlab01_eastus|
+| Figura 5: MC_rg-aks-devlab01_aks-devlab01_eastus|
+
+Após a criação do cluster vimos que foi criado apenas um node pool como informamos no comando --node-count 1 e este node pool é um system node pool
+e sistema operacional ubuntu linux
+
+| ![system-node-pool.png](images/system-node-pool.png) |
+|:-----------------------------:|
+| Figura 6: system node pool|
+
+
+**Passo 4:** A adição de um user node pool, pode ser realizada com o comando abaixo:
+
+```
+az aks nodepool add --resource-group rg-aks-devlab01 --cluster-name aks-devlab01  --mode User --node-count 1 --name usernodepool
+```
+
+Após a execução do comando vemos um novo node pool adicionado no cluster aks-devlab01 do tipo user node
+
+| ![user-node.png](images/user-node.png) |
+|:-----------------------------:|
+| Figura 7: user-node|
