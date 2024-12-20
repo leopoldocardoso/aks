@@ -50,7 +50,7 @@ Clicando na figura 1, podemos notar que foi criado o aks-devlab01 e clicando na 
 
 | ![mc-rg-aks.png](images/mc-rg-aks.png) |
 |:-----------------------------:|
-| Figura 1: rg-aks-png |
+| Figura 2: mc-rg-aks-png |
 
 
 Os recursos criados automaticamente e gerenciados pela Micrososft são:
