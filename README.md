@@ -150,5 +150,6 @@ segue passo a passo:
 - Será aberta a tela abaixo para que você se logue no portal
 | ![azlogin.png](images/azlogin.png) |
 |:-----------------------------:|
-| Figura 3: az login |
+| Figura 3: az login|
+
  
