@@ -103,3 +103,26 @@ No AKS podemos ter clusters públicos e privados.
 - Controle de acesso rigoroso 
 - Complexidade Operacional
 - Necessidade de VPN
+
+## Nodes e Node Pool
+
+- Um Node Pool é um conjunto de máquinas virtuais (*Nós*) homogêneas
+- São provisionados para executar os *Nós* (Nodes) de um cluster kubenertes AKS
+- Cada *Nó* executa contêineres e cargas de trabalho do Kuberentes
+
+### Caracteristícas do Node Pool
+
+**Escalabilidade:**
+- É possível dimensionar horizontalmente um node pool adicionando ou removendo *Nós*
+
+**Configuração flexível**
+- Cada node pool pode ter configurações diferentes, como tamanho de VM, tipo de VM e até versão do sistema operacional
+
+**Isolamento de recursos**
+- É possível isolar recursos para diferentes cargas de trabalho no mesmo cluster AKS
+
+**Atualização controlada**
+- Capacidade de atualizar ou fazer upgrade de um node pool separadament de forma controlada
+
+**Balanceamento de carga**
+- Os nodes pools podem ser configurados com diferentes tipos de VMs para otimizar o balanceamento de carga para atender requisitos de desempenho.
