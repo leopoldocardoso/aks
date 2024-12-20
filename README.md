@@ -44,17 +44,14 @@ Clicando na figura 1, podemos notar que foi criado o aks-devlab01 e clicando na 
 É possível notar que o grupo de recursos *MC_rg-aks-devlab01_aks-devlab01_eastus* contém as tags informando qual cluster ele é gerenciado e em qual resource group ele se encontra.
 
 <figure>
-  <img src="images/rg-aks.png" alt="rg-aks-devlab01" style="width:400px; height:300;">
+  <img src="images/rg-aks.png" alt="rg-aks-devlab01" style="width:300px; height:auto;">
   <figcaption>Figura 1: rg-aks-devlab01</figcaption>
 </figure>
-
 
 <figure>
   <img src="images/mc-rg-aks.png" alt="MC_rg-aks-devlab01_aks-devlab01_eastus" style="width:200px; height:auto;">
   <figcaption>Figura 2: MC_rg-aks-devlab01_aks-devlab01_eastus</figcaption>
 </figure>
-
-
 
 Os recursos criados automaticamente e gerenciados pela Micrososft são:
 
@@ -84,3 +81,25 @@ Os recursos criados automaticamente e gerenciados pela Micrososft são:
 **7 - Managed Identity**
 - Fornece uma identidade do Microsoft Entra, gerenciada automaticamente pelo Azure
 - No AKS é utilizada para conceder permissões de acesso aos *Nós* do cluster a outros recursos do Azure
+
+## Tipos de Cluster AKS
+
+No AKS podemos ter clusters públicos e privados.
+
+### Caracteristicas do Cluster Público
+
+- API Server com IP Público
+- Integração direta com ferramentas de CI/CD
+- Facilidade de integração
+- Administração remota sem VPN
+- Risco de exposição na internet
+- Necessidade contínua de gestão de segurança
+
+### Cluste Privado
+
+- API Server com IP Privado
+- Acesso restrito a rede privada do AKS
+- Máxima segurança e conformidade
+- Controle de acesso rigoroso 
+- Complexidade Operacional
+- Necessidade de VPN
