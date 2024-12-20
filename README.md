@@ -38,4 +38,4 @@ Dentro deste grupo de recursos gerenciado alguns componentes são criados para o
 
 No exemplo abaixo vejam que criei o recurso aks-devlab01 no grupo de recursos *rg-aks-devlab01* e automaticamente foi criado um grupo de recurso chamado *MC_rg-aks-devlab01_aks-devlab01_eastus*. 
 
-![alt text](image.png)
+![rg-aks-devlab01](image.png)
