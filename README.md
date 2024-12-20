@@ -45,12 +45,12 @@ Clicando na figura 1, podemos notar que foi criado o aks-devlab01 e clicando na 
 
 | ![rg-aks.png](images/rg-aks.png) |
 |:-----------------------------:|
-| Figura 1: rg-aks-png |
+| Figura 1: rg-aks |
 
 
 | ![mc-rg-aks.png](images/mc-rg-aks.png) |
 |:-----------------------------:|
-| Figura 2: mc-rg-aks-png |
+| Figura 2: mc-rg-aks|
 
 
 Os recursos criados automaticamente e gerenciados pela Micrososft são:
@@ -126,3 +126,29 @@ No AKS podemos ter clusters públicos e privados.
 
 **Balanceamento de carga:**
 - Os nodes pools podem ser configurados com diferentes tipos de VMs para otimizar o balanceamento de carga para atender requisitos de desempenho.
+
+### Tipos de Node Pool
+
+**1 - Node Pool de Sistema(System Node Pool)**
+- Reservado para os serviços do sistema kubernetes essenciais para o control plane
+
+**2 - Node Pool de Usuário(User Node Pool)**
+- Onde as cargas de trabalho são executadas
+- Principal área onde os conteineres e os aplicativos serão aplicados
+
+**IMPORTANTE**: Quando criamos o aks através do azure cli por default ele cria por default o o system node pool, como melhor prática devemos adicionar o user node pool.
+
+## Um pouco de Mão na Massa, o famoso Hands on
+
+Podemos criar um cluster aks no Azure acessando o portal.azure.com, através de linha de comando utilizando o Azure CLI, ou através do código terraform.
+
+Irei demonstrar como criar um cluster aks com as configurações default utilizando o azure cli, considerando que você já tenha uma conta no Azure e o Azure CLI instalado, 
+segue passo a passo:
+
+**Passo 1:** realizar o login no portal do azure através da linha de comando:
+- az login
+- Será aberta a tela abaixo para que você se logue no portal
+| ![azlogin.png](images/azlogin.png) |
+|:-----------------------------:|
+| Figura 3: az login |
+ 
