@@ -148,6 +148,7 @@ segue passo a passo:
 **Passo 1:** realizar o login no portal do azure através da linha de comando:
 - az login
 - Será aberta a tela abaixo para que você se logue no portal
+
 | ![azlogin.png](images/azlogin.png) |
 |:-----------------------------:|
 | Figura 3: az login|
