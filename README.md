@@ -4,9 +4,9 @@
 
 ## Principais Caracteristicas do AKS
 
- **1 - Gerenciamento Simplificado:**
+**1 - Gerenciamento Simplificado:**
 
- - O control plane do Kubernetes é gerenciado pela Microsoft, incluindo atualizações, patches e escalabilidade, permitindo que os usuários foquem nas cargas de trabalho e menos na infraestrutura
+- O control plane do Kubernetes é gerenciado pela Microsoft, incluindo atualizações, patches e escalabilidade, permitindo que os usuários foquem nas cargas de trabalho e menos na infraestrutura
 
 **2 - Escalabilidade Automática:**
 
@@ -53,6 +53,7 @@ Clicando na figura 1, podemos notar que foi criado o aks-devlab01 e clicando na 
   <img src="images/mc-rg-aks.png" alt="MC_rg-aks-devlab01_aks-devlab01_eastus" style="width:300px; height:auto;">
   <figcaption>Figura 2: MC_rg-aks-devlab01_aks-devlab01_eastus</figcaption>
 </figure>
+
 
 Os recursos criados automaticamente e gerenciados pela Micrososft são:
 
