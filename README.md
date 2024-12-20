@@ -36,7 +36,12 @@ Quando criamos um Cluster AKS, automaticamente um grupo de recursos gerenciado p
 
 Dentro deste grupo de recursos gerenciado alguns componentes são criados para o funcionamento do AKS.
 
-No exemplo abaixo vejam que criei o recurso aks-devlab01 no grupo de recursos *rg-aks-devlab01* e automaticamente foi criado um grupo de recurso chamado *MC_rg-aks-devlab01_aks-devlab01_eastus*. 
+No exemplo abaixo vejam que criei o recurso aks-devlab01 no grupo de recursos *rg-aks-devlab01* e automaticamente foi criado um grupo de recurso chamado
+*MC_rg-aks-devlab01_aks-devlab01_eastus*. 
+
+Clicando na figura 1, podemos notar que foi criado o aks-devlab01 e clicando na figura 2 podemos visualizar que foram criados componentes gerenciados pela Microsoft.
+
+É possível notar que o grupo de recursos *MC_rg-aks-devlab01_aks-devlab01_eastus* contém as tags informando qual cluster ele é gerenciado e em qual resource group ele se encontra.
 
 <figure>
   <img src="images/rg-aks.png" alt="rg-aks-devlab01" style="width:300px; height:auto;">
@@ -49,3 +54,31 @@ No exemplo abaixo vejam que criei o recurso aks-devlab01 no grupo de recursos *r
   <figcaption>Figura 2: MC_rg-aks-devlab01_aks-devlab01_eastus</figcaption>
 </figure>
 
+Os recursos criados automaticamente e gerenciados pela Micrososft são:
+
+**1 - Virtual Machine Scale Set (VMSS):** 
+- Utilizada para hospedar os nodes do cluster
+
+**2 - Virtual Network (VNET):** 
+- Representa a própria rede do Azure
+- Proporciona isolamento e controle de tráfego
+- Permite que os *Nós* e *PODs* do kubernetes se comuniquem de forma segura
+
+**3 - Network Security Group:**
+- Filtro de rede que pode conter várias regras de segurança
+- Permite ou nega tráfego de rede para recursos conectados a VNET
+
+**4 - Route Table:**
+- Contém um conjunto de regras chamadas rotas que determina para onde o tráfego de rede deve ser direcioinado
+- No AKS direciona o tráfego de rede entre os *PODs* e para fora do cluster
+
+**5 - Load Balancer:**
+- Usado para distribuir as solicitações de usuários entre diferentes instâncias de um serviço ou aplicação
+- Garante desempenho e disponibilidade
+
+**6 - Public IP:**
+- Utilizado para expor serviços ao tráfego externo
+
+**7 - Managed Identity**
+- Fornece uma identidade do Microsoft Entra, gerenciada automaticamente pelo Azure
+- No AKS é utilizada para conceder permissões de acesso aos *Nós* do cluster a outros recursos do Azure
