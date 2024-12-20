@@ -55,6 +55,7 @@ Clicando na figura 1, podemos notar que foi criado o aks-devlab01 e clicando na 
 </figure>
 
 
+
 Os recursos criados automaticamente e gerenciados pela Micrososft são:
 
 **1 - Virtual Machine Scale Set (VMSS):** 
