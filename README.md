@@ -163,3 +163,21 @@ segue passo a passo:
 ```
  az group create -l eastus -n rg-aks-devlab01
  ```
+
+**Passo 3:** Criação do AKS com o comando abaixo:
+
+```
+az aks create -g rg-aks-devlab01 -n aks-devlab01 --node-count 1 --generate-ssh-keys
+```
+Onde:
+az aks create: comando para criação do AKS
+-g rg-aks-devlab01 -n aks-devlab01: informando que o cluster será criado no resource group rg-aks-dev-lab01 e com o nome aks-devlab01
+--node-count 1: define o número de node pool que será criado, neste caso apenas 1
+--generate-ssh-keys: define a geração de chaves ssh
+
+Após a execução destes dois comandos nosso cluster aks foi criado.
+
+| ![rg-aks.png](images/rg-aks.png) |
+|:-----------------------------:|
+| Figura 1: rg-aks |
+
