@@ -162,5 +162,4 @@ segue passo a passo:
 
 ```
  az group create -l eastus -n rg-aks-devlab01
-
  ```
