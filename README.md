@@ -44,7 +44,7 @@ Clicando na figura 1, podemos notar que foi criado o aks-devlab01 e clicando na 
 É possível notar que o grupo de recursos *MC_rg-aks-devlab01_aks-devlab01_eastus* contém as tags informando qual cluster ele é gerenciado e em qual resource group ele se encontra.
 
 <figure>
-  <img src="images/rg-aks.png" alt="rg-aks-devlab01" style="width:300px; height:200;">
+  <img src="images/rg-aks.png" alt="rg-aks-devlab01" style="width:400px; height:300;">
   <figcaption>Figura 1: rg-aks-devlab01</figcaption>
 </figure>
 
