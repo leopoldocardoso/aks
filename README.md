@@ -147,10 +147,13 @@ segue passo a passo:
 
 **Passo 1:** realizar o login no portal do azure através da linha de comando:
 - az login
-- Será aberta a tela abaixo para que você se logue no portal
+- Será aberta a tela abaixo para que você se logue no portal e logo após tela no terminal para selecionar a subscription caso, tenha mais de uma
 
 | ![azlogin.png](images/azlogin.png) |
 |:-----------------------------:|
 | Figura 3: az login|
 
- 
+
+| ![azlogin-01.png](images/azlogin-01.png) |
+|:-----------------------------:|
+| Figura 4: az login|
