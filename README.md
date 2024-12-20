@@ -205,4 +205,4 @@ Após a execução do comando vemos um novo node pool adicionado no cluster aks-
 
 | ![user-node.png](images/user-node.png) |
 |:-----------------------------:|
-| Figura 7: user-node|
+| Figura 7: user node pool|
