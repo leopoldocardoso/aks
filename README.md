@@ -43,15 +43,10 @@ Clicando na figura 1, podemos notar que foi criado o aks-devlab01 e clicando na 
 
 É possível notar que o grupo de recursos *MC_rg-aks-devlab01_aks-devlab01_eastus* contém as tags informando qual cluster ele é gerenciado e em qual resource group ele se encontra.
 
-<figure>
-  <img src="images/rg-aks.png" alt="rg-aks-devlab01" style="width:300px; height:auto;">
-  <figcaption>Figura 1: rg-aks-devlab01</figcaption>
-</figure>
+| ![Meu Logo]("images/rg-aks.png") |
+|:-----------------------------:|
+| Figura 1: Meu logo personalizado |
 
-<figure>
-  <img src="images/mc-rg-aks.png" alt="MC_rg-aks-devlab01_aks-devlab01_eastus" style="width:200px; height:auto;">
-  <figcaption>Figura 2: MC_rg-aks-devlab01_aks-devlab01_eastus</figcaption>
-</figure>
 
 Os recursos criados automaticamente e gerenciados pela Micrososft são:
 
