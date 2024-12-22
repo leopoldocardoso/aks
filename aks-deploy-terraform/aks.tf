@@ -3,11 +3,7 @@ resource "azurerm_kubernetes_cluster" "aks-devlab" {
   location            = azurerm_resource_group.rg-aks.location
   resource_group_name = azurerm_resource_group.rg-aks.name
   dns_prefix          = "aksdevdelab"
-  network_profile {
-    network_plugin = "azure"
-    # network_plugin_mode = "overlay"
-    load_balancer_sku = "standard"
-  }
+
 
   default_node_pool {
     name       = "aksdev"
