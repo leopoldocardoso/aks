@@ -26,7 +26,7 @@
 
 ### Deploy do AKS utilizando kubenete através do terraform
 
-[deploy aks - kubenet](https://github.com/leopoldocardoso/aks/tree/develop/deploy-terraform/aks-deploy-terraform)
+[deploy aks - kubenet](https://github.com/leopoldocardoso/aks/tree/develop/deploy-terraform/aks-kubenet)
 
 ## Azure CNI Network Plugin
 
@@ -54,6 +54,4 @@
 
 ### Deploy do AKS utilizando Azure CNI através do terraform
 
-| ![network-profile-cni.png](images/network-profile-cni.png) |
-|:-----------------------------:|
-| Figura 1: network-profile-cni.png |
+[deploy aks - Azure CNI](https://github.com/leopoldocardoso/aks/tree/develop/deploy-terraform/aks-azure-cni)
