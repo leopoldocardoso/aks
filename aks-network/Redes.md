@@ -55,3 +55,7 @@
 ### Deploy do AKS utilizando Azure CNI através do terraform
 
 [deploy aks - Azure CNI](https://github.com/leopoldocardoso/aks/tree/develop/deploy-terraform/aks-azure-cni)
+
+| ![azure-cni.png](/aks-network/imagens-network/azure-cni.png) |
+|:-----------------------------:|
+| Figura 1: azure-cni |
