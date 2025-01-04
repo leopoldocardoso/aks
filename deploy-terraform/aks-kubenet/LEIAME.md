@@ -34,8 +34,8 @@ Neste código terraform, o arquivo usernode.tf  cria o user node pool, no moment
 
 - Execute os seguintes comandos:
 
- *-* terraform init: inicia o terraform
- *-* terraform validate: realiza a validação do seu código
- *-* terraform fmt: formata a identação do seu código
- *-* terraform plan: planeja o deploy do aks, informa o que será criado
- *-* terraform apply: executa o deploy do aks
+ - terraform init: inicia o terraform
+ - terraform validate: realiza a validação do seu código
+ - terraform fmt: formata a identação do seu código
+ - terraform plan: planeja o deploy do aks, informa o que será criado
+ - terraform apply: executa o deploy do aks

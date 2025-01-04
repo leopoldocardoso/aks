@@ -1,0 +1,59 @@
+# Redes no Azure Kubernetes Service - AKS
+
+## Kubenet Network Plugin
+
+- Plugin de rede simplificado
+- Baseado em roteamento de IP
+- Conhecido por ser o Network Plugin defaul do AKS
+- Os nodes recebem atribuição de IPs pela VNET do AKS
+- Os PODs recebem atribuição de IPs por um POD CIDR que é um espaço de endereço lógico
+- Utiliza ARP Protocol para facilitar a comunicação entre os PODs no mesmo NODE
+- Para comunicação entre NODEs, ele cria uma tabela de roteamento para que seja possível a comunicação dos PODs entre os diferentes NODEs
+
+### Quando usar Kubenet Network Plugin
+
+- Workoads que não dependem de funcionalidades de redes avançadas
+- Ambientes que não exigem altos níveis escalabilidade de redes
+- Ambientes de laboratório
+
+### Limitações
+
+- Escalabilidade: Não permite vários clusters na mesma subrede
+- Máximo de 400 rotas, o que significa o máximo de 400 NODEs em um cluster
+- Não suporta NODEs Windows
+- Não suporta network policy
+- Não suporta virtual nodes
+
+### Deploy do AKS utilizando kubenete através do terraform
+
+[deploy aks - kubenet](https://github.com/leopoldocardoso/aks/tree/develop/deploy-terraform/aks-deploy-terraform)
+
+## Azure CNI Network Plugin
+
+- Baseado na infraestrutura de redes do Azure
+- Utiliza endereços IPs gerenciados pelo Azure para os PODs do Kubernetes
+- Os IPs são pré-alocados com base em cada NODE conforme o parâmetro MaxPods
+- Um IP para o NODE mais os IPs dos PODs, conforme o parâmetro MaxPods
+- O tráfego de rede entre os PODs é encaminhado sem a necessidade de roteamento por meios de UDRs
+- Oferece alta performance e baixa latência para comunicação entre os PODs, adequado para workloads exigentes em termos de rede.
+- Altamente escalável
+- Pode ser utilizado em clusters AKS de grande porte e cenários de alta carga de trabalho com eficiência.
+
+### Quando usar
+
+- Necessidade de alta performance e baixa latência para comunicação entre os PODs.
+- Quando houver comunicação com dispositivos fora do cluster
+- Necessidade de múltiplos clusters na mesma subrede
+- NODEs Windows
+- Virtual NODEs
+
+### Desvantagens
+
+- Complexo de configurar, exigindo um bom planejamento em redes
+- Aumento dos clusters pode levar a exaustão de endereços IPs
+
+### Deploy do AKS utilizando Azure CNI através do terraform
+
+| ![network-profile-cni.png](images/network-profile-cni.png) |
+|:-----------------------------:|
+| Figura 1: network-profile-cni.png |
