@@ -28,7 +28,7 @@
 
 [deploy aks - kubenet](https://github.com/leopoldocardoso/aks/tree/develop/deploy-terraform/aks-kubenet)
 
-| ![kubenet.png](/aks-network/imagens-network/kubenet.png) |
+| ![kubenet.png](/aks-network/images-network/kubenet.png) |
 |:-----------------------------:|
 | Figura 1: kubenet |
 
@@ -60,7 +60,7 @@
 
 [deploy aks - Azure CNI](https://github.com/leopoldocardoso/aks/tree/develop/deploy-terraform/aks-azure-cni)
 
-| ![azure-cni.png](/aks-network/imagens-network/azure-cni.png) |
+| ![azure-cni.png](/aks-network/images-network/azure-cni.png) |
 |:-----------------------------:|
 | Figura 2: azure-cni |
 
@@ -90,6 +90,6 @@
 
 [deploy aks - Azure CNI](https://github.com/leopoldocardoso/aks/tree/develop/deploy-terraform/aks-azure-cni-overlay)
 
-| ![azure-cni-overlay.png](/aks-network/imagens-network/cni-overlay.png) |
+| ![azure-cni-overlay.png](/aks-network/images-network/cni-overlay.png) |
 |:-----------------------------:|
 | Figura 3: azure-cni-overlay |
