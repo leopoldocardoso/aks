@@ -28,6 +28,10 @@
 
 [deploy aks - kubenet](https://github.com/leopoldocardoso/aks/tree/develop/deploy-terraform/aks-kubenet)
 
+| ![kubenet.png](/aks-network/imagens-network/kubenet.png) |
+|:-----------------------------:|
+| Figura 2: kubenet |
+
 ## Azure CNI Network Plugin
 
 - Baseado na infraestrutura de redes do Azure
@@ -58,4 +62,4 @@
 
 | ![azure-cni.png](/aks-network/imagens-network/azure-cni.png) |
 |:-----------------------------:|
-| Figura 1: azure-cni |
+| Figura 2: azure-cni |

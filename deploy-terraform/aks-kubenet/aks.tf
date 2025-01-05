@@ -5,6 +5,13 @@ resource "azurerm_kubernetes_cluster" "aks-devlab" {
   dns_prefix          = "aksdevdelab"
 
 
+  # Network Plugin Kubenet
+  network_profile {
+    network_plugin    = "kubenet"
+    load_balancer_sku = "standard"
+  }
+  
+  
   default_node_pool {
     name       = "aksdev"
     node_count = 1
