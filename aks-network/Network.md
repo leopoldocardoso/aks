@@ -92,4 +92,4 @@
 
 | ![azure-cni-overlay.png](/aks-network/imagens-network/cni-overlay.png) |
 |:-----------------------------:|
-| Figura 2: azure-cni-overlay |
+| Figura 3: azure-cni-overlay |
