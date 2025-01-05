@@ -30,7 +30,7 @@
 
 | ![kubenet.png](/aks-network/imagens-network/kubenet.png) |
 |:-----------------------------:|
-| Figura 2: kubenet |
+| Figura 1: kubenet |
 
 ## Azure CNI Network Plugin
 
@@ -63,3 +63,33 @@
 | ![azure-cni.png](/aks-network/imagens-network/azure-cni.png) |
 |:-----------------------------:|
 | Figura 2: azure-cni |
+
+## Azure CNI Overlay Network Plugin
+
+- Neste plugin os nós são implantados em uma vnet
+- Os PODs recebem endereços IPs de um CIDR privado logicamente diferente da vnet que hosped os NODEs
+- O tráfego do POD e do Nó dentro do cluster usa uma rede de sobreposição
+- Utiliza NAT para permitir que os Nós se comuniquem com recursos externos, como a internet
+- O NAT traduz os endereços de IPs internos dos Nós para um único endereço externo
+- Cada NODE recebe um espaçõ de endereço /24
+
+### Quando usar
+
+- Quando precisar escalar para um grande número de PODs, mas tem espaço de endereço IP limitado
+- Maior parte da comunicação dos PODs está dentro do cluster
+
+### Quando não usar
+
+- Se você possui muita comunicação fora do cluster
+- Se tiver NODEs Windows Server 2019, pois não suporta
+- Se precisar de um Application Gateway como ingress controller
+
+### Deploy do AKS utilizando Azure CNI Overlay através do terraform
+
+#### Note que para realizar o deploy do aks utilizando Azure CNI Overlay não é necessário informar o Network Profile. Veja que ele está comentando no código
+
+[deploy aks - Azure CNI](https://github.com/leopoldocardoso/aks/tree/develop/deploy-terraform/aks-azure-cni-overlay)
+
+| ![azure-cni-overlay.png](/aks-network/imagens-network/azure-cni-overlay.png) |
+|:-----------------------------:|
+| Figura 2: azure-cni-overlay |

@@ -5,7 +5,7 @@ resource "azurerm_kubernetes_cluster" "aks-devlab" {
   dns_prefix          = "aksdevdelab"
 
 
-# Network Plugin Azure CNI Overlay: usar este plugin 
+# Network Plugin Azure CNI Overlay
   # network_profile {
   #   network_plugin    = "azure"
   #   load_balancer_sku = "standard"
