@@ -90,6 +90,6 @@
 
 [deploy aks - Azure CNI](https://github.com/leopoldocardoso/aks/tree/develop/deploy-terraform/aks-azure-cni-overlay)
 
-| ![azure-cni-overlay.png](/aks-network/imagens-network/azure-cni-overlay.png) |
+| ![azure-cni-overlay.png](/aks-network/imagens-network/cni-overlay.png) |
 |:-----------------------------:|
 | Figura 2: azure-cni-overlay |
