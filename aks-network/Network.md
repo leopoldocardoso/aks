@@ -4,7 +4,6 @@
 
 - Plugin de rede simplificado
 - Baseado em roteamento de IP
-- Conhecido por ser o Network Plugin defaul do AKS
 - Os nodes recebem atribuição de IPs pela VNET do AKS
 - Os PODs recebem atribuição de IPs por um POD CIDR que é um espaço de endereço lógico
 - Utiliza ARP Protocol para facilitar a comunicação entre os PODs no mesmo NODE
